@@ -37,13 +37,13 @@ docker run -d \
   intro-bot
 ```
 
-###Configuración de sonidos
+### Configuración de sonidos
 
 El bot utiliza el **nombre usuario único** de cada persona para identificar qué sonido reproducir
 1. Coloca tus archivos .mp3 en la carpeta sounds/
 2. El nombre del archivo debe coincidir con el usuario.
 
-###Ejemplo:
+### Ejemplo:
 * Usuario: nico99 -> Archivo: sounds/nico99.mp3
 * Usuario: ignacio777 -> Archivo: sounds/ignacio777.mp3
 
