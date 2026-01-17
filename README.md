@@ -18,20 +18,24 @@ Está diseñado para ser desplegado fácilmente mediante **Docker**, eliminando 
 ```bash
 git clone [https://github.com/Ncatalanv/docker-discord-bot-intro.git](https://github.com/Ncatalanv/docker-discord-bot-intro.git)
 cd docker-discord-bot-intro
+```
 
 ### 2. Construir la Imagen
 ```bash
 docker build -t voice-greeter .
+```
 
 ### 3. Ejecutar el contenedor
 Hay que ejecutar el contenedor en segundo plano (-d), ingresando tu Token de Discord y conectando tu carpeta de sonidos local:
 
+```
 docker run -d \
   --name mi-bot \
   --restart=always \
   -e TOKEN=TU_TOKEN_ACA \
   -v "${PWD}/sounds:/app/sounds" \
   intro-bot
+```
 
 ###Configuración de sonidos
 
